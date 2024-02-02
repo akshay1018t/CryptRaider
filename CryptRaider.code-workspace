@@ -1,0 +1,852 @@
+{
+	"folders": [
+		{
+			"name": "CryptRaider",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CryptRaider Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"Mac",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Test",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaider IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaider IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaider",
+					"IOS",
+					"Shipping",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Debug",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"DebugGame",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CryptRaiderEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			},
+			{
+				"label": "CryptRaiderEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CryptRaiderEditor",
+					"Mac",
+					"Development",
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CryptRaider (Debug)",
+				"request": "launch",
+				"program": "/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "CryptRaider Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaider (DebugGame)",
+				"request": "launch",
+				"program": "/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "CryptRaider Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaider (Development)",
+				"request": "launch",
+				"program": "/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "CryptRaider Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaider (Test)",
+				"request": "launch",
+				"program": "/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "CryptRaider Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaider (Shipping)",
+				"request": "launch",
+				"program": "/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "CryptRaider Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaiderEditor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "CryptRaiderEditor Mac Debug Build",
+				"args": [
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaiderEditor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "CryptRaiderEditor Mac DebugGame Build",
+				"args": [
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Launch CryptRaiderEditor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "CryptRaiderEditor Mac Development Build",
+				"args": [
+					"/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.3",
+				"type": "lldb"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/akshaytiwlekar/Desktop/Game Development/unreal dev course/CryptRaider/CryptRaider/CryptRaider.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.3"
+			}
+		]
+	}
+}
